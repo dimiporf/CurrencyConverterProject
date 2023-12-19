@@ -4,8 +4,9 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:fa="http://schemas.fontawesome.io/icons/"
+        xmlns:local="clr-namespace:CurrencyConverterProject"
         mc:Ignorable="d"
-        Title="Currency Converter" SizeToContent="WidthAndHeight" WindowStartupLocation="CenterScreen" >
+        Title="Currency Converter" SizeToContent="WidthAndHeight" WindowStartupLocation="CenterScreen" Icon="/logo.png">
     <TabControl Name="tbMain" TabStripPlacement="Top">
         <TabItem Name="tbConverter" Header="Currency Converter">
             <Grid>
@@ -70,7 +71,7 @@
                     </Button>
                 </StackPanel>
                 <StackPanel Grid.Row="4" Height="150" Width="800" HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Horizontal">
-                    <Image Height="150" Width="150"  VerticalAlignment="Center" HorizontalAlignment="Center" Margin="325 0"/>
+                    <Image Height="150" Width="150" Source="/logo.png" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="325 0"/>
                 </StackPanel>
             </Grid>
         </TabItem>
@@ -137,7 +138,7 @@
                             <DataGridTemplateColumn Header="" Width="70" IsReadOnly="True" DisplayIndex="0">
                                 <DataGridTemplateColumn.CellTemplate>
                                     <DataTemplate>
-                                        <Image  ToolTip="Edit" Width="20" Height="20"  x:Name="Revise"/>
+                                        <Image Source="/edit-button.png" ToolTip="Edit" Width="20" Height="20"  x:Name="Revise"/>
                                     </DataTemplate>
                                 </DataGridTemplateColumn.CellTemplate>
                             </DataGridTemplateColumn>
@@ -145,7 +146,7 @@
                             <DataGridTemplateColumn Header="" Width="70" IsReadOnly="True" DisplayIndex="1">
                                 <DataGridTemplateColumn.CellTemplate>
                                     <DataTemplate>
-                                        <Image  ToolTip="Delete" Width="20" Height="20"  x:Name="Delete"/>
+                                        <Image Source="/delete-button.png" ToolTip="Delete" Width="20" Height="20"  x:Name="Delete"/>
                                     </DataTemplate>
                                 </DataGridTemplateColumn.CellTemplate>
                             </DataGridTemplateColumn>
@@ -156,7 +157,7 @@
                     </DataGrid>
                 </StackPanel>
                 <StackPanel Grid.Row="4" Height="150" Width="800" HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Horizontal">
-                    <Image Height="150" Width="150"  VerticalAlignment="Center" HorizontalAlignment="Center" Margin="325 0"/>
+                    <Image Height="150" Width="150" Source="Images\Logo.png" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="325 0"/>
                 </StackPanel>
             </Grid>
         </TabItem>
