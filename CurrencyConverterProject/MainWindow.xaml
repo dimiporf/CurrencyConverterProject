@@ -67,9 +67,18 @@
                 </Button.Background>
             </Button>
         </StackPanel>
-        <StackPanel Grid.Row="4" Height="150" Width="800" HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Horizontal">
-            <Image Height="50" Width="150" Source="/Images/Logo.png" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="325 0"/>
+        <StackPanel Grid.Row="4" Height="100" Width="500" HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Horizontal">
+            <Image Height="50" Width="150" Source="/Images/Logo.png" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="175 0"/>
         </StackPanel>
 
+        <TabControl Name="tbMain" TabStripPlacement="Top">
+
+            <TabItem Name="tbConverter" Header="Currency Converter"></TabItem>
+
+            <TabItem Name="tbMaster" Header="Currency Master"></TabItem>
+
+        </TabControl>
+
     </Grid>
+    
 </Window>
